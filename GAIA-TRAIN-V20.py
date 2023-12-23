@@ -4,9 +4,7 @@ import tensorflow as tf
 from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Embedding, LSTM, Dense
-import numpy as np
-from datetime import datetime
+from tensorflow.keras.layers import Embedding, LSTM, Dense, Dropout, Bidirectional
 from sklearn.model_selection import train_test_split
 
 def load_data(file_path):
@@ -44,8 +42,11 @@ def load_tokenizer(file_path):
 
 def create_model(vocab_size, max_sequence_length):
     model = Sequential()
-    model.add(Embedding(vocab_size, 50, input_length=max_sequence_length-1))
-    model.add(LSTM(100))
+    model.add(Embedding(vocab_size, 100, input_length=max_sequence_length-1))
+    model.add(Bidirectional(LSTM(200, return_sequences=True)))
+    model.add(Bidirectional(LSTM(200)))
+    model.add(Dense(256, activation='relu'))
+    model.add(Dropout(0.5))
     model.add(Dense(vocab_size, activation='softmax'))
     model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
     return model
@@ -163,7 +164,7 @@ def main():
     while True:
         try:
             print(f"\nTraining attempt {training_attempts} - Epochs: {epochs} - ETA: Calculating...")
-            history = model.fit(X_train, y_train, epochs=epochs, verbose=1)
+            history = model.fit(X_train, y_train, epochs=epochs, verbose=1, validation_data=(X_test, y_test))  # Add validation data
 
             # Evaluate the model
             _, current_accuracy = model.evaluate(X_test, y_test, verbose=0)
