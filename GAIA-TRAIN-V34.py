@@ -6,6 +6,7 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Embedding, LSTM, Dense, Dropout, Bidirectional
 from sklearn.model_selection import train_test_split
+from tensorflow.keras.callbacks import EarlyStopping
 
 def load_data(file_path):
     with open(file_path, 'r', encoding='utf-8') as file:
@@ -43,12 +44,13 @@ def load_tokenizer(file_path):
 def create_model(vocab_size, max_sequence_length):
     model = Sequential()
     model.add(Embedding(vocab_size, 100, input_length=max_sequence_length-1))
-    model.add(Bidirectional(LSTM(200, return_sequences=True)))
-    model.add(Bidirectional(LSTM(200)))
-    model.add(Dense(256, activation='relu'))
+    model.add(Bidirectional(LSTM(100, return_sequences=True)))
+    model.add(Bidirectional(LSTM(100, return_sequences=True)))  # Additional LSTM layer
+    model.add(Bidirectional(LSTM(100)))
+    model.add(Dense(128, activation='relu'))
     model.add(Dropout(0.5))
     model.add(Dense(vocab_size, activation='softmax'))
-    model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
+    model.compile(loss='categorical_crossentropy', optimizer=tf.keras.optimizers.Adam(learning_rate=0.0001), metrics=['accuracy'])
     return model
 
 def load_best_model(model_path='best_model.h5', tokenizer_path='best_tokenizer.json', accuracy_path='best_accuracy.txt'):
@@ -84,7 +86,7 @@ def print_gaia_ascii():
  G:::::G       GGGGGG           A:::::::::A             I::::I             A:::::::::A
 G:::::G                        A:::::A:::::A            I::::I            A:::::A:::::A
 G:::::G                       A:::::A A:::::A           I::::I           A:::::A A:::::A
-G:::::G    GGGGGGGGGG        A:::::A   A:::::A          I::::I          A:::::A   A:::::A        
+G:::::G    GGGGGGGGGG        A:::::A   A:::::A          I::::I          A:::::A   A:::::A
 G:::::G    G::::::::G       A:::::A     A:::::A         I::::I         A:::::A     A:::::A
 G:::::G    GGGGG::::G      A:::::AAAAAAAAA:::::A        I::::I        A:::::AAAAAAAAA:::::A
 G:::::G        G::::G     A:::::::::::::::::::::A       I::::I       A:::::::::::::::::::::A
@@ -110,43 +112,30 @@ def main():
         print("Error: No conversations found.")
         return
     
-    max_sequence_length = max(len(conv.split()) for conv in conversations) if total_conversations > 0 else 0
     print(f"Total number of conversations: {total_conversations}")
     print(f"Total number of words: {total_words}")
-    
-    # Load or create tokenizer
-    tokenizer_path = 'tokenizer.json'
+
+    # Tokenization
+    tokenizer_path = 'best_tokenizer.json'
     tokenizer = load_tokenizer(tokenizer_path)
+
     if tokenizer is None:
         tokenizer = create_tokenizer(conversations)
         save_tokenizer(tokenizer, tokenizer_path)
 
     vocab_size = len(tokenizer.word_index) + 1
-    print(f"Vocabulary size: {vocab_size}")
+    max_sequence_length = max([len(seq.split()) for seq in conversations]) + 1
 
-    # Prepare data
-    max_sequence_length = 10  # Set a value based on the typical number of words in a conversation
-    print(f"Max sequence length: {max_sequence_length}\n")
-    
-    input_sequences = []
-    for line in conversations:
-        token_list = tokenizer.texts_to_sequences([line])[0]
-        input_sequences.append(token_list)
+    print(f"Tokenizer file loaded or created. Vocabulary size: {vocab_size}")
+    print(f"Max sequence length: {max_sequence_length}")
 
-    # Print input sequence information
-    print("Number of input sequences:", len(input_sequences))
-    if input_sequences:
-        print("First input sequence:", input_sequences[0])
+    sequences = tokenizer.texts_to_sequences(conversations)
+    padded_sequences = pad_sequences(sequences, maxlen=max_sequence_length, padding='pre')
 
-    if not input_sequences:
-        print("Error: No input sequences found.")
-        return
-    
-    input_sequences = pad_sequences(input_sequences, maxlen=max_sequence_length, padding='pre')
-    X, y = input_sequences[:, :-1], input_sequences[:, -1]
+    # Prepare data for training
+    X, y = padded_sequences[:, :-1], padded_sequences[:, -1]
     y = tf.keras.utils.to_categorical(y, num_classes=vocab_size)
 
-    # Split the data
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
     # Load or create model
@@ -156,35 +145,22 @@ def main():
     if model is None or tokenizer is None:
         model = create_model(vocab_size, max_sequence_length)
 
-    # Training parameters
-    training_attempts = 1
-    max_accuracy = 0.0  # Initialize to a lower value
-    epochs = 50  # Set the number of epochs for each training attempt
+    print(model.summary())
 
-    while True:
-        try:
-            print(f"\nTraining attempt {training_attempts} - Epochs: {epochs} - ETA: Calculating...")
-            history = model.fit(X_train, y_train, epochs=epochs, verbose=1, validation_data=(X_test, y_test))  # Add validation data
+    # Training
+    epochs = 100  # Adjust the number of epochs as needed
+    early_stopping = EarlyStopping(monitor='val_accuracy', patience=30, restore_best_weights=True)
 
-            # Evaluate the model
-            _, current_accuracy = model.evaluate(X_test, y_test, verbose=0)
-            print(f"Training attempt {training_attempts} - Epochs: {epochs} - Accuracy: {current_accuracy:.4f}")
+    print(f"\nTraining attempt 1 - Epochs: {epochs} - ETA: Calculating...")
+    history = model.fit(X_train, y_train, epochs=epochs, verbose=1, validation_data=(X_test, y_test), callbacks=[early_stopping])
 
-            if current_accuracy > max_accuracy:
-                print(f"Desired accuracy of {max_accuracy * 100}% achieved! Stopping training.")
-                save_best_model(model, tokenizer, current_accuracy, model_path=model_path, tokenizer_path=tokenizer_path)
-                break
+    # Print the training history
+    print("\nTraining History:")
+    print(history.history)
 
-            # Load the best model for the next attempt
-            model, tokenizer = load_best_model(model_path=model_path, tokenizer_path=tokenizer_path)
-            if model is None or tokenizer is None:
-                model = create_model(vocab_size, max_sequence_length)
-
-            training_attempts += 1
-
-        except KeyboardInterrupt:
-            print("\nTraining interrupted by user. Exiting.")
-            break
+    # Save the best model
+    accuracy = history.history['val_accuracy'][-1]
+    save_best_model(model, tokenizer, accuracy)
 
     print("Auto-diagnostics: Training completed.")
 
