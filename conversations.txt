@@ -118,3 +118,288 @@ Cooking class on Sunday.
 Italian cuisine. Wanna join?
 Love Italian! Let's cook up a feast.
 Ready for a culinary adventure!
+How are you today?
+I am okay, thank you for asking.
+Good morning! Rise and shine!
+How are you today? Ready for the day?
+Nice to see you! Hey!
+Greetings! Howdy!
+What's up? How's your day?
+Anything exciting? How's everything?
+Long time no see! Hi, friend!
+What's the latest? How have you been?
+How's the day treating you? Any plans for later?
+Enjoying the moment? Evening!
+How was your day? Anything interesting happen?
+Relaxing now? Hiya!
+How's life? Tell me some good news!
+What's the buzz? Hola!
+Cómo estás? Todo bien?
+Qué hay de nuevo? Salut!
+Ça va? Quoi de neuf?
+Prêt pour la journée? Afternoon coffee break?
+Definitely! Need that caffeine boost. Let's hit the café down the street.
+Perfect, I could use a break. Happy hour tomorrow?
+Count me in! Any special place? The new rooftop bar.
+Sounds great, looking forward to it. Busy day at work.
+Tell me about it. So much to do. Just taking it one task at a time.
+Hang in there, you got this! Did you catch the latest episode?
+Of the new series? Not yet. It's a game-changer, must watch!
+I'll binge it this weekend. Vacation planning time!
+Thinking beach or mountains? Mountains, for the tranquility.
+Great choice, fresh mountain air! Meeting new people at the event.
+Exciting! Networking opportunities. Nervous though, any tips?
+Just be yourself, you'll do great. Kids' soccer practice today.
+Ah, the joys of parenthood. They're loving it. Growing up fast.
+Cherish every moment! Finally, Friday!
+Long week, right? Ready for the weekend plans?
+Absolutely, bring it on! Just finished a good book.
+Recommend it? What's the title? "The Silent Observer." Gripping!
+Adding it to my reading list. Home renovation underway.
+DIY or professionals? Hiring professionals for this one.
+Smart move, saves time and stress. Food festival this weekend!
+Heard about it. Wanna check it out? Definitely! Trying new cuisines?
+Absolutely, can't wait! Karaoke night on Thursday!
+Sounds fun! Which songs to practice? Let's do some classic rock.
+Perfect, I'll warm up my vocals! Want to go on a road trip?
+Why not! Where to? Let's decide at the gas station.
+Spontaneity at its best! Art and Wine class on Saturday.
+Interested? Absolutely! Painting and wine? Count me in, let's get creative.
+Ready for a culinary adventure! How are you today? I am okay, thank you for asking.
+So let's make the number 1, 2, 3, and something you suggest.
+Now, could you provide me with the entire code with the new modifications please?
+Hello, how are you?
+I'm good, thank you for asking.
+What's your favorite movie genre?
+I enjoy sci-fi and fantasy films.
+Do you have a favorite director?
+Christopher Nolan, his films are mind-bending.
+Have you ever been to a film festival?
+Yes, attended one last year. It was fantastic!
+What's your go-to comfort food?
+Mac and cheese, always hits the spot.
+Any hobbies you're passionate about?
+I love painting, very therapeutic.
+Do you prefer acrylics or watercolors?
+Acrylics, love the vibrant colors. You paint too?
+Occasionally, usually landscapes. What inspires your art?
+Nature and emotions, the two are intertwined.
+Ever been to an art gallery opening?
+Yes, it's an immersive experience. Do you like poetry?
+Absolutely, poetry is the language of the soul.
+Favorite poet or poem?
+Rumi's work resonates with me deeply. Yours?
+Emily Dickinson, her words are profound. Do you play any sports?
+Tennis and swimming, great for staying active.
+Planning any outdoor activities this weekend?
+A hike in the mountains, love the fresh air.
+Have you ever tried mountain climbing?
+Not yet, but it's on my bucket list. Your favorite season?
+Autumn, the colors are mesmerizing. Yours?
+Spring, the blooming flowers and warmth. Do you enjoy cooking?
+Yes, experimenting with new recipes is fun.
+Any signature dish you're known for?
+My homemade lasagna is a hit. Share the recipe?
+It's a family secret, sorry! Any favorite childhood memory?
+Summer vacations at the beach, pure joy.
+Do you have a favorite beach destination?
+Maldives, the clear water is stunning. Dream travel location?
+Japan, the culture fascinates me. Sushi or ramen?
+Both! Hard to choose. Any favorite book genre?
+Mystery novels, love a good detective story.
+Read any memorable books lately?
+"The Silent Observer," couldn't put it down. Recommend it!
+Favorite way to spend a rainy day?
+Cuddled up with a book and tea. Your ideal weekend?
+A mix of relaxation and adventure. Yours?
+Exploring new cafes and parks. Any hidden talents?
+I can play the piano. Impressive! Any favorite genre to play?
+Classical music, it's timeless. Do you enjoy live music?
+Yes, the energy of a live concert is unbeatable.
+Favorite music genre or band?
+Rock, and "Echoes of Eternity" is a favorite.
+Ever been to a rock festival?
+Yes, last year. The atmosphere was electrifying!
+Favorite festival memory?
+Discovering new bands and dancing all night. Morning or night person?
+Definitely a night owl. The world is quieter.
+Do you have any morning rituals?
+Coffee and a good book to start the day. What's your dream job?
+Travel photographer, capturing moments worldwide.
+Have you traveled extensively for photography?
+Visited a few countries, still more to explore. Any languages you want to learn?
+Spanish, the sound is beautiful. Do you speak any other languages?
+French and a bit of German. Impressive! Any language learning tips?
+Consistency and practice are key. Do you exercise regularly?
+Yes, a mix of cardio and strength training.
+Notice any positive changes in your health?
+Increased energy and mental clarity. Ever tried meditation?
+Yes, it helps with stress. Any specific type you practice?
+Mindfulness meditation, great for focus. What's your favorite season?
+Summer, love the warmth and longer days.
+Beach or mountains for a vacation?
+Beach, the sound of the waves is soothing.
+Favorite beach destination?
+Bora Bora, the overwater bungalows are dreamy. Dream home location?
+A cottage in the countryside. Yours?
+A penthouse in the city, love the skyline views. Do you have a favorite quote?
+"Be the change you wish to see." - Gandhi.
+Any daily affirmations you follow?
+"I am capable, I am strong." Your favorite way to unwind?
+A hot bath and soft music. Yours?
+A good movie or series marathon. Any upcoming plans or goals?
+Learning to play the guitar. Exciting! Any specific genre you want to play?
+Folk music, it has a soothing vibe. Do you enjoy gardening?
+Yes, it's therapeutic. Planning anything new in your garden?
+Starting a herb garden soon. Great for cooking!
+Favorite herb to grow?
+Basil, it adds so much flavor. Cooking or baking?
+Cooking, experimenting with flavors is fun.
+Signature dish you love to cook?
+Homemade pizza with unique toppings. Do you follow a specific diet?
+Vegetarian, it suits my lifestyle. How about you?
+Balanced diet with occasional indulgences. Any favorite cuisine?
+Italian, the flavors are rich. Favorite Italian dish?
+Eggplant Parmesan, a classic. Movie night or a live concert?
+Live concert, the energy is infectious.
+Favorite concert you've attended?
+A rock festival last year. Best performance?
+"Echoes of Eternity," blew me away. Do you enjoy dancing?
+Yes, it's a great stress reliever. Dance style you prefer?
+Salsa, the rhythm is exhilarating. Have you taken dance lessons?
+Yes, it's a fun way to stay active. Any favorite dance memory?
+Dancing under the stars at a beach party. Morning or evening workout?
+Evening, it helps me unwind. Any fitness goals?
+Building strength and flexibility. Ever tried a new workout routine?
+Yes, high-intensity interval training. Noticed any changes?
+Increased stamina and muscle tone. Do you have any pets?
+Yes, a cat named Luna. Do you like animals?
+Love them! Any favorite animal?
+Elephants, they're majestic creatures. Have you been on a safari?
+Yes, in Africa. Seeing lions in the wild was incredible.
+Favorite wildlife encounter?
+Spotting a rare bird during a jungle trek. Do you enjoy hiking?
+Yes, the connection with nature is refreshing.
+Favorite hiking destination?
+Swiss Alps, breathtaking views. Any memorable hike?
+Cinque Terre, the coastal trails were stunning. Morning or night person?
+Night person, the world is peaceful. Do you believe in astrology?
+Open-minded. Any zodiac sign compatibility theories?
+They can be fun but not too serious about it. What's your zodiac sign?
+Aries, and yours? Virgo, they say we're a good match. Do you collect anything?
+Vintage postcards, they tell stories. Any rare finds?
+An old postcard from the 1920s. Fascinating! Do you enjoy thrift shopping?
+Yes, you find unique items. Favorite thrifted find?
+A vintage leather jacket, perfect fit. Do you have a favorite season?
+Autumn, the colors are magical. Your go-to coffee order?
+Cappuccino with a dash of cinnamon. Yours?
+Black coffee, strong and simple. Ever tried coffee from different regions?
+Yes, it's interesting to taste the nuances. Do you have a favorite cuisine?
+Mexican, the flavors are bold. Any specific dish you love?
+Chicken mole, the combination is divine. Do you enjoy cooking Mexican food?
+Yes, the spices add depth. Planning a trip to Mexico?
+Yes, exploring the culture and cuisine. Any must-visit places?
+Tulum for its beaches and ancient ruins. Do you have a favorite dessert?
+Chocolate lava cake, irresistible. Yours?
+Tiramisu, the coffee flavor is delightful. Do you enjoy baking?
+Yes, especially cookies. Favorite cookie recipe?
+Chewy chocolate chip, a classic. Ever tried baking bread?
+Yes, homemade sourdough is a game-changer. Any favorite bread recipe?
+Seeded whole-grain bread, healthy and tasty. Do you enjoy gardening?
+Yes, growing flowers and herbs. Any gardening tips?
+Watering in the morning promotes growth. Ever been to a flower festival?
+Yes, the colors were mesmerizing. Favorite flower?
+Sunflowers, they radiate positivity. Do you have any allergies?
+No allergies. Any food you dislike?
+Not a fan of mushrooms. Any favorite childhood TV show?
+"SpongeBob SquarePants," pure nostalgia. Yours?
+"Tom and Jerry," timeless humor. Do you enjoy animated movies?
+Yes, especially Pixar films. Favorite Pixar movie?
+"Finding Nemo," heartwarming and funny. Do you have a favorite quote?
+"Where there is love, there is life." - Gandhi.
+Any life motto you follow?
+"Live in the moment." Your ideal weekend getaway?
+A cozy cabin in the mountains. Yours?
+A beachside resort with spa treatments. Do you enjoy board games?
+Yes, game nights are so much fun. Favorite board game?
+Settlers of Catan, strategic and entertaining. Ever played video games?
+Yes, a fan of adventure games. Favorite video game?
+"The Legend of Zelda: Breath of the Wild." Yours? "Assassin's Creed Odyssey." Great choices! Do you like spicy food?
+Yes, the heat adds excitement. Spiciest dish you've tried?
+Ghost pepper wings, intense but delicious. Any hidden talents?
+I can solve a Rubik's Cube quickly. Impressive! Ever competed in a competition?
+Yes, won a few speed-solving contests. Do you have a favorite superhero?
+Batman, the dark and mysterious vibe. Yours?
+Wonder Woman, she's empowering. Do you have any siblings?
+Yes, one sister. Are you close?
+Very close, she's my best friend. Ever had a pen pal?
+Yes, in school. Do you still write letters?
+Occasionally, it's a lost art. Favorite pen or stationery?
+A fountain pen with blue ink. Yours? A gel pen with black ink. Do you enjoy stargazing?
+Yes, the night sky is mesmerizing. Favorite constellation?
+Orion, it's prominent and easy to spot. Have you been to a planetarium?
+Yes, it's a fascinating experience. Any favorite planet?
+Saturn, the rings are captivating. Do you enjoy DIY projects?
+Yes, crafting is a great way to relax.
+Any specific DIY project you're proud of?
+Built a bookshelf from scratch. Impressive! Do you enjoy hiking?
+Yes, it's refreshing to be in nature.
+Favorite hiking trail or destination?
+The Appalachian Trail, the variety of landscapes is stunning.
+Do you have a favorite season?
+Autumn, the colors are magical.
+Your ideal weekend getaway?
+A cabin in the mountains, surrounded by nature.
+What's your favorite type of cuisine?
+I love Italian food, especially pasta.
+Any favorite pasta dish?
+Spaghetti Bolognese, a classic favorite.
+Do you enjoy cooking?
+Yes, trying out new recipes is a hobby.
+Any recent favorite recipe you've tried?
+I made a delicious Thai curry last week.
+Have you ever traveled to Thailand?
+Not yet, but it's on my travel wishlist.
+What's your dream travel destination?
+I dream of visiting the beautiful Santorini in Greece.
+Have you been on a cruise?
+Yes, a Mediterranean cruise a few years ago.
+Favorite part of the cruise experience?
+Exploring different cities without changing hotels.
+Do you collect anything?
+I collect vintage postcards from my travels.
+Any postcard with a memorable story?
+One from a quaint village in the Swiss Alps.
+Do you enjoy thrift shopping?
+Absolutely, you never know what treasures you'll find.
+Favorite thrifted item in your wardrobe?
+A unique vintage leather jacket.
+What's your favorite type of music?
+I enjoy a variety, but indie folk is a current favorite.
+Any indie folk artist you recommend?
+"Of Monsters and Men" has great indie folk vibes.
+Do you play any musical instruments?
+I play the guitar, mostly acoustic.
+Favorite song to play on the guitar?
+"Wish You Were Here" by Pink Floyd.
+Do you have a favorite genre of books?
+Mystery novels always keep me hooked.
+Any favorite mystery author or book?
+Agatha Christie's "Murder on the Orient Express."
+Do you prefer physical books or e-books?
+I love the feel of physical books, but e-books are convenient.
+Have you ever attended a book club?
+Yes, discussing books with others is enriching.
+Favorite book club memory or book discussed?
+"1984" by George Orwell sparked intense discussions.
+Do you enjoy gardening?
+Yes, cultivating plants is therapeutic for me.
+Favorite plant or flower in your garden?
+Roses, their fragrance is delightful.
+Do you have a green thumb?
+I'm learning! Trial and error in gardening.
+What's your favorite form of exercise?
+Yoga is my go-to for both physical and mental well-being.
+Any favorite yoga pose?
+Child's pose, it's grounding and relaxing.
+Have you ever been to a yoga retreat?
